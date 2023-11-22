@@ -6,6 +6,8 @@ for (let i = 0; i < priceArray.length; i++) {
 	ans+=parseInt(priceArray[i].innerText);
 }
 let total=document.createElement("tr");
-total.setAttribute("data-ns-test", "grandTotal");
-total.innerText=ans;
+let td=document.createElement("td");
+td.setAttribute("data-ns-test", "grandTotal");
+td.innerText=ans;
+total.appendChild(td);
 table.appendChild(total);
