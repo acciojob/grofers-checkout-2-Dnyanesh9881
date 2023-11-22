@@ -7,8 +7,8 @@ for (let i = 0; i < priceArray.length; i++) {
 }
 let total=document.createElement("tr");
 let td=document.createElement("td");
-total.setAttribute("data-ns-test", "grandTotal");
-td.setAttribute("data-ns-test", "prices");
+total.setAttribute("data-ns-test", "prices");
+// td.setAttribute("data-ns-test", "prices");
 td.innerText=ans;
 total.appendChild(td);
 table.appendChild(total);
